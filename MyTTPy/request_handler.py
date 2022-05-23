@@ -1,16 +1,13 @@
-from cgi import test
-import http
 import pickle
 import time
 import urllib.parse
-from http.cookiejar import CookieJar
 from pathlib import Path
 
 from requests import Session
 from requests.cookies import RequestsCookieJar
 
-from .global_urls import *
 from . import parser
+from .global_urls import *
 
 
 class RequestHandler:

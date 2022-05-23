@@ -1,6 +1,4 @@
 from . import parser
-from pathlib import Path
-
 from .player import Player
 from .request_handler import RequestHandler
 
