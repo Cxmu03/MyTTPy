@@ -19,7 +19,7 @@ class MyTTClient:
         for index, player in enumerate(players):
             player_qttr_history = self.handler.get_qttr_history_page(player.id)
             player.qttr = parser.parse_qttr(player_qttr_history)
-            if(player.qttr == -1):
+            if player.qttr == -1:
                 players.pop(index)
 
         return players
@@ -27,11 +27,11 @@ class MyTTClient:
     def get_player(self, first_name: str, last_name: str, club_name: str = None) -> Player:
         players = self.get_players(first_name, last_name)
 
-        if(len(players) == 1):
+        if len(players) == 1:
             return players[0]
 
         for player in players:
-            if(club_name.lower() in player.club_name.lower()):
+            if club_name.lower() in player.club_name.lower():
                 return player
-        
+
         return None
