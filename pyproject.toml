@@ -1,0 +1,23 @@
+[project]
+name = "MyTTPy"
+version = "0.0.0"
+description = "Unofficial api for mytischtennis.de"
+readme = "readme.md"
+requires-python = ">=3.10"
+keywords = ["python", "table-tennis", "mytischtennis.de", "webscraper"]
+
+dependencies = [
+    "requests",
+    "beautifulsoup4"
+]
+
+[project.urls]
+homepage = "https://github.com/Cxmu03/MyTTPy"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["MyTTPy"]
+
