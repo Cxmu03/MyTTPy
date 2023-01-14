@@ -40,5 +40,8 @@ Looks up a player by their name and checks if the provided club name is containe
 - League support
 - TTR History
 - Ranking support
+- Add docstrings
+- Add documentation generator (Sphinx)
+
 # Disclaimer
 I take no responsibility for misuse of this code and consequenses arising from such conduct. This is purely for educational purposes. **Any possible account ban does not fall into my responsibility**.
