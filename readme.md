@@ -2,10 +2,11 @@
 This repository tries to be sort of an unofficial API for mytischtennis.de by parsing the website contents
 # Example Usage
 ```py
->>> from MyTTPy import client
+>>> from MyTTPy import MyTTClient
 >>> client = MyTTClient()
 >>> client.log_in("username", "password")
->>> player = client.get_player("Timo", "Boll", "Dürkheim")
+True
+>>> player = client.get_player("Timo", "Boll", "Düsseldorf")
 >>> player
 Player(name='Timo Boll', id='17741', qttr=2595, club_name='Borussia Düsseldorf', club_id='141046')
 ```
