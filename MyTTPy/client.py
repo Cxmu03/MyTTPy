@@ -2,6 +2,8 @@ from . import parser
 from .player import Player
 from .request_handler import RequestHandler
 
+from typing import Optional
+
 
 class MyTTClient:
     '''
